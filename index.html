@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Smart Energi</title>
+</head>
+<body style="text-align:center; font-family:Arial;">
+
+  <h1>SMART ENERGI OTOMATIS</h1>
+  <p id="status">Lampu Mati</p>
+
+  <button onclick="lampu()">ON / OFF</button>
+
+  <script>
+    let nyala = false;
+
+    function lampu(){
+      if(nyala == false){
+        document.getElementById("status").innerHTML = "Lampu Nyala";
+        nyala = true;
+      } else {
+        document.getElementById("status").innerHTML = "Lampu Mati";
+        nyala = false;
+      }
+    }
+  </script>
+
+</body>
+</html>
